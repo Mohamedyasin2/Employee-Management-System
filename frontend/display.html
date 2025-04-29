@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Display Employees</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-100 p-10">
+
+    <h2 class="text-3xl font-bold mb-8 text-center">All Employees</h2>
+
+    <table class="table-auto w-full bg-white shadow-md rounded-lg overflow-hidden">
+        <thead class="bg-blue-500 text-white">
+            <tr>
+                <th class="py-3 px-4">ID</th>
+                <th class="py-3 px-4">Name</th>
+                <th class="py-3 px-4">Email</th>
+                <th class="py-3 px-4">Role</th>
+                <th class="py-3 px-4">Salary</th>
+            </tr>
+        </thead>
+        <tbody id="employeeTable" class="text-gray-700">
+            <!-- Dynamic Data Here -->
+        </tbody>
+    </table>
+
+    <a href="index.html" class="block text-center mt-10 text-blue-600 hover:underline">Back to Home</a>
+
+    <!-- Axios Library -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="app.js"></script>
+
+
+
+</body>
+
+</html>
